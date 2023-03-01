@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import AddItems from "../../Pages/AddItems/AddItems";
 import AllServices from "../../Pages/AllServices/AllServices";
+import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
 import BookReserve from "../../Pages/Home/Reserve/BookReserve";
 import Login from "../../Pages/Login/Login";
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
            {
             path:'/servicedetails/:id',
             element:<ServiceDetails></ServiceDetails>,
-            loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+            loader: ({ params }) => fetch(`https://food-review-server-three.vercel.app/services/${params.id}`)
            },
            
           
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
            {
             path:'/reserve',
             element:<BookReserve></BookReserve>
+           },
+           {
+            path:'/blog',
+            element:<Blog></Blog>
            }
         ]
     }

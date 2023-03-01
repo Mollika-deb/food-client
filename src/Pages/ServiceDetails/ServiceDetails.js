@@ -32,7 +32,7 @@ const ServiceDetails = () => {
         message
       }
 
-      fetch('http://localhost:5000/reviews',{
+      fetch('https://food-review-server-three.vercel.app/reviews',{
         method: 'POST',
         headers: {
             'content-type': 'application/json',
@@ -52,7 +52,7 @@ const ServiceDetails = () => {
     }
 
     useEffect(()=>{
-      fetch(`http://localhost:5000/reviews?itemId=${_id}`)
+      fetch(`https://food-review-server-three.vercel.app/reviews?itemId=${_id}`)
       .then(res => res.json())
       .then(data => setReviews(data))
     },[_id])

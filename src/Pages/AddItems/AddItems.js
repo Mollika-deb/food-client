@@ -20,7 +20,7 @@ const AddItems = () => {
             img 
         }
 
-        fetch('http://localhost:5000/additem', {
+        fetch('https://food-review-server-three.vercel.app/additem', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -40,6 +40,8 @@ const AddItems = () => {
     }
     return (
         <div>
+             <h1 className='text-5xl mt-28 mb-5 text-center text-orange-700' style={{ fontFamily: 'Playfair Display',   }}>Add Your Poducts</h1>
+
              <form onSubmit={handleAddItems} className="card-body">
                         <div className="form-control">
                            

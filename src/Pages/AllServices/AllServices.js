@@ -7,7 +7,7 @@ const AllServices = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allservices')
+        fetch('https://food-review-server-three.vercel.app/allservices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

@@ -8,7 +8,7 @@ const MyReviewItem = ({myreview}) => {
     // const handleDelete = _id =>{
     //     const proceed = window.confirm('are you sure to delete ths review??');
     //     if(proceed){
-    //         fetch(`http://localhost:5000/myreviews/${_id}`, {
+    //         fetch(`https://food-review-server-three.vercel.app/myreviews/${_id}`, {
     //             method: 'DELETE',
     //         })
     //         .then(res => res.json())
