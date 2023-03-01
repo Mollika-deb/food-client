@@ -31,6 +31,7 @@ const Login = () => {
 
         const form = event.target;
         const email = form.email.value;
+        const name = form.name.value;
         const password = form.password.value;
 
 
@@ -60,9 +61,15 @@ const Login = () => {
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text font-bold text-2xl">Name</span>
+                </label>
+                <input type="text" name="name" placeholder="name" className="input input-bordered" required/>
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text font-bold text-2xl">Email</span>
                 </label>
-                <input type="text" name="email" placeholder="email" className="input input-bordered" required/>
+                <input type="email" name="email" placeholder="email" className="input input-bordered" required/>
               </div>
               <div className="form-control">
                 <label className="label">

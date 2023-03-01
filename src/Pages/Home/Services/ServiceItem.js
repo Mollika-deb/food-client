@@ -10,11 +10,11 @@ const ServiceItem = ({service}) => {
     <img  src= {img} alt="Shoes" className="rounded-xl w-full" style={{ height: '250px'  }}/>
   </figure>
   <div className="card-body items-center text-center" >
-    <h2 className="card-title text-3xl" style={{ fontFamily: 'Oleo Script',   }}>{title}</h2>
-    <p className='text-xl' style={{ fontFamily: 'Oleo Script', color:'#8DB255'  }}>{price} TK</p>
-    <p>{description.slice(0,100)}...</p>
+    <h2 className="card-title text-3xl text-orange-700" style={{ fontFamily: 'Oleo Script',   }}>{title}</h2>
+    <p className='text-xl' style={{ fontFamily: 'Oleo Script',  }}>{price} TK</p>
+    <p>{description?.slice(0,100)}...</p>
     <div className="card-actions ">
-     <Link to={`/servicedetails/${_id}`}> <button className="btn mt-3" style={{ backgroundColor: '#7A942E'  }}>View details</button></Link>
+     <Link to={`/servicedetails/${_id}`}> <button className="btn bg-orange-600 px-10 mt-3" >View details</button></Link>
     </div>
   </div>
   
