@@ -7,7 +7,7 @@ import './About.css'
 const About = () => {
     return (
         <div className='flex mx-20 justify-center items-center '>
-            <div id="aboutImage" className='flex w-1/2 '>
+            <div id="aboutImage" className='flex w-1/2 mr-20'>
                 <img className='mt-32'  src={about3} alt=""/>
                 <img  className='mt-20 mb-14 ml-10' src={about4} alt=""/>
             </div>
