@@ -13,6 +13,27 @@ const MyReview = () => {
             .then((data) => setMyreviews(data));
         }
       }, [user?.email]);
+
+      const handleDelete = id =>{
+        const proceed = window.confirm('are you sure to delete ths review??');
+        if(proceed){
+            fetch(`https://food-review-server-three.vercel.app/myreviews/${id}`, {
+                method: 'DELETE',
+            })
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data)
+                if(data.deletedCount > 0){
+                  alert('deleted successfully')
+                  const remaining = myreviews.filter(rev => rev._id !== id);
+                  setMyreviews(remaining)
+                }
+            })
+   
+
+            
+        }
+    }
   
     return (
       <div>
@@ -23,7 +44,11 @@ const MyReview = () => {
         <div className='grid lg:grid-cols-2 gap-7 mx-10 my-10'>
         {
           myreviews.map((myreview) => (
-            <MyReviewItem key={myreview._id} myreview={myreview} />
+            <MyReviewItem 
+            key={myreview._id}
+             myreview={myreview}
+             handleDelete = {handleDelete}
+              />
           ))}
          
         </div>
