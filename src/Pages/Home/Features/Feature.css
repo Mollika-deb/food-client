@@ -1,5 +1,5 @@
 .newcontainer{
-    width: 90%;
+  
    
    margin: auto;
     display: flex;
@@ -11,7 +11,7 @@
     height: 300px;
     margin: 0 10px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0,  .1);
-    background-color: red;
+
     transition: 1s;
 }
 .box img{

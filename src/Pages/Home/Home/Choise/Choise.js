@@ -8,7 +8,7 @@ const Choise = () => {
         <div className='w-[90vw] mx-auto mt-32'>
             <h2 className='text-3xl lg:text-4xl text-center text-orange-700' style={{ fontFamily: 'Playfair Display ',   }}>Why Choose Us</h2>
             <h2 className='text-2xl lg:text-3xl text-center font-semibold pt-4 pb-7 text-green-700' style={{ fontFamily: 'Playfair Display', color:'#7A942E'  }}>Countless Experience</h2>
-            <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-6'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-6'>
                 <div className=' bg-slate-100 p-7 rounded-md'>
                 <div className='lg:flex gap-10   '>
                 <img  src= {img1} alt="Shoes"  className='h-24 w-24'/>
