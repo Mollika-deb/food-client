@@ -8,12 +8,12 @@ const Banneritems = ({slide}) => {
     return (
         <div id={`slide${id}`} className="carousel-item relative  w-full">
             <div className='slider-img'>
-                <img id="image" src={image} alt="" className="w-full  " />
+                <img id="image" src={image} alt="" className="w-[100vw] h-[50vh] lg:h-[100vh] object-cover" />
             </div>
             
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center ">
                 <p className="" > 
-            <span className='text-7xl font-bold text-orange-500 ' style={{ fontFamily: 'Oleo Script',  }}>
+            <span className='text-2xl md:text-2xl lg:text-5xl font-bold text-orange-500 ' style={{ fontFamily: 'Oleo Script',  }}>
           
           <Typewriter
             words={['Welcome To FoodKA']}
@@ -26,8 +26,8 @@ const Banneritems = ({slide}) => {
             
           />
         </span> 
-        <br /><span className=' text-5xl font-bold text-orange-300' > &</span> <br/>
-         <span className='text-6xl text-center font-semibold  text-orange-500' style={{ fontFamily: 'Dancing Script',   }}>Find The Delicious Bengali Food.</span> 
+        <br /><span className=' lg:text-3xl font-bold text-orange-300' > &</span> <br/>
+         <span className='text-2xl lg:text-4xl lg:block text-center font-semibold  text-orange-500' style={{ fontFamily: 'Dancing Script',   }}>Find The Delicious Bengali Food.</span> 
           </p>
 
             </div>
