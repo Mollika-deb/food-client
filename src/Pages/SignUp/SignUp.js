@@ -32,40 +32,40 @@ const SignUp = () => {
        
     return (
         <div className="hero ">
-        <div className="hero-content grid md:grid-cols-2  flex-col lg:flex-row mt-32 h-max">
+        <div className="hero-content grid md:grid-cols-2  flex-col lg:flex-row mt-10 h-max">
           <div className="text-center max-w-lg lg:text-left">
            
           <img id="" src={image} alt="" className="rounded-3xl mr-16" style={{ height:'500px'  }}/>
           
           </div>
-          <div className="card  max-w-lg shadow-2xl bg-base-100 ml-16" >
-          <h1 className="text-5xl font-bold text-center" style={{ fontFamily: 'Oleo Script', color:'#8DB255'  }}>Sign Up now!</h1>
+          <div className="card  max-w-lg  bg-base-100 ml-16" >
+          
             <form onSubmit={handleSignup} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-bold text-2xl">Name</span>
+                  <span className="label-text font-bold text-base">Name</span>
                 </label>
-                <input type="text"  placeholder="Name" className="input input-bordered" />
+                <input type="text"  placeholder="Name" className="input input-bordered rounded-full" />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-bold text-2xl">Email</span>
+                  <span className="label-text font-bold text-base">Email</span>
                 </label>
-                <input type="text" name='email' placeholder="email" className="input input-bordered" required/>
+                <input type="text" name='email' placeholder="email" className="input input-bordered rounded-full" required/>
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-bold text-2xl">Password</span>
+                  <span className="label-text font-bold text-base">Password</span>
                 </label>
-                <input type="text" name='password' placeholder="password" className="input input-bordered" required/>
+                <input type="text" name='password' placeholder="password" className="input input-bordered rounded-full" required/>
                
               </div>
               <div className="form-control mt-6">
-                <input className="btn  bg-emerald-600" Type="submit" value="Sign Up"/>
+                <input className="btn  bg-emerald-600 rounded-full" Type="submit" value="Sign Up"/>
                 
               </div>
             </form>
-            <p className=" font-semibold text-center text-xl pb-4">New to Foodka? please <Link className='text-green-700 font-bold' to='/login'>Sign In!</Link></p>
+            <p className=" font-semibold text-center text-base pb-4">New to Foodka? please <Link className='text-green-700 font-bold ' to='/login'>Sign In!</Link></p>
           </div>
         </div>
       </div>
