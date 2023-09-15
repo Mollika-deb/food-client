@@ -5,7 +5,7 @@ const ServiceItem = ({service}) => {
 
     const{img, _id,  title, description, price} = service;
     return (
-        <div className="card bg-base-100  hover:shadow-xl shadow-md mt-10">
+        <div className="card bg-base-100  hover:shadow-xl shadow-md ">
   <figure className="">
     <img  src= {img} alt="Shoes" className="rounded-xl w-full" style={{ height: '250px'  }}/>
   </figure>
